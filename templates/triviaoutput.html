@@ -1,0 +1,18 @@
+{% extends 'trivia.html' %}
+
+
+{% block output %}
+
+<strong><h2>OUTPUT: </h2></strong>
+
+
+<strong><font size="5">Category:  {{ Data[0]['category'] }}</font></strong>
+<br>
+
+<strong><font size="5">Question: </font></strong>: <font size="4">{{ Data[0]['question'] }}</font>
+<br>
+<strong><font size="5">Answer: </font></strong>: <font size="4">{{ Data[0]['answer'] }}</font>
+<br>
+
+
+{% endblock %}

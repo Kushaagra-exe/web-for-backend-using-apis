@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Info</title>
+    <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <DIV>
+        <STRONg><H1>Ip adress Information</H1></STRONg>
+        <font size="4">This tool gives you info about your ip address</font>
+    </DIV>
+
+    <div>
+        <center>
+            <strong><u><P><font size="4" color="green">Enter Your Ip Adress: </font></P></u></strong>
+            <form action="#" method="post">
+                <input type="text" minlength="7" maxlength="15" size="15" name="ipaddress" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </center>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    {% block output %}
+
+    {% endblock %}
+
+
+
+
+    <div id="footer">
+        Made with ♥ By Kushaagra
+    </div id="footer">
+</body>
+</html>

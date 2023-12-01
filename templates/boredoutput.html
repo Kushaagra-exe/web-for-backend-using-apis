@@ -1,0 +1,24 @@
+{% extends "bored.html" %}
+
+
+{% block output %}
+<br><br><br>
+<h3>OUTPUT</h3>
+<br>
+
+<strong><font size="4">Suggested Activity: </font></strong><font size="3">{{ resp['activity'] }}</font>
+<br>
+<strong><font size="4">Activity Type: </font></strong><font size="3">{{ resp['type'] }}</font>
+<br>
+<strong><font size="4">Participants Needed: </font></strong><font size="3">{{ resp['participants'] }}</font>
+<br>
+<strong><font size="4">Price Rating: </font></strong><font size="3">{{ resp['price']*100 }}</font>
+<br>
+<strong><font size="4">Accessibility Rating: </font></strong><font size="3">{{ resp['accessibility']*100 }}</font>
+<br>
+<strong><font size="4">Helful Links: </font></strong><font size="3">{{ resp['link'] }}</font>
+
+
+
+
+{% endblock %}

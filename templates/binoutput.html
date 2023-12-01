@@ -1,0 +1,63 @@
+{% extends "binlookup.html" %}
+
+
+
+    {% block errors %}
+    <font color="red">  <strong><h3><div>{{ERRORS}}</div></h3></strong></font>
+      
+    {% endblock %}
+
+
+
+
+
+    {% block output%} 
+
+
+    <h4>NUMBER</h4>
+    <SPan>
+        LENGTH : {{info['number']['length']}}
+        <br>
+        LUHN : {{info['number']['luhn']}}
+    </SPan>
+    <br>
+    <SPan>
+        scheme : {{info['scheme']}}
+        <br>
+        type : {{info['type']}}
+        <br>
+        Phone : {{info['brand']}}
+        <br>
+        prepaid : {{info['prepaid']}}
+    </SPan>
+    <br>
+    <h4>BANK</h4>
+    <SPan>
+        Name : {{info['bank']['name']}}
+        <br>
+        Url : {{info['bank']['url']}}
+        <br>
+        Phone : {{info['bank']['phone']}}
+        <br>
+        City : {{info['bank']['city']}}
+    </SPan>
+    <br>
+    <h4>COUNTRY</h4>
+    <SPan>
+        Numeric : {{info['country']['numeric']}}
+        <br>
+        Alpha2 : {{info['country']['alpha2']}}
+        <br>
+        Name : {{info['country']['name']}}
+        <br>
+        Emoji : {{info['country']['emoji']}}
+        <br>
+        Currency : {{info['country']['currency']}}
+        <br>
+        Latitude : {{info['country']['latitude']}}
+        <br>
+        Longitude : {{info['country']['longitude']}}
+    </SPan>
+
+    {% endblock %}
+    

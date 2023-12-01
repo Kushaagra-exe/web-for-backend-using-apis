@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Info</title>
+    <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <DIV>
+        <STRONg><H1>Random Info Gen</H1></STRONg>
+        <font size="4">This tool Guesses your Age, Nationality and Gender from your Name</font>
+    </DIV>
+
+    <div>
+        <center>
+            <strong><u><P><font size="4" color="green">Enter Your Name: </font></P></u></strong>
+            <form action="#" method="post">
+                <input type="text" name="name">
+                <input type="submit" value="Submit">
+            </form>
+        </center>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    {% block output %}
+
+    {% endblock %}
+
+
+
+
+    <div id="footer">
+        Made with ♥ By Kushaagra
+    </div id="footer">
+</body>
+</html>

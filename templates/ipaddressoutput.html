@@ -1,0 +1,25 @@
+{% extends "ipaddresshome.html" %}
+
+{% block output %}
+
+<br><br>
+<strong><font size="4">Ip-Adress Entered: </font></strong><strong><font size="4" color="red">{{ Data['ip'] }}</font></strong>
+
+
+<br>
+<strong>City: </strong> {{ Data['city'] }}
+<br>
+<strong>Region: </strong> {{ Data['region'] }}
+<br>
+<strong>Country: </strong> {{ Data['country'] }}
+<br>
+<strong>Coordinates: </strong> {{ Data['loc'] }}
+<br>
+<strong>Organisation: </strong> {{ Data['org'] }}
+<br>
+<strong>Zip Code: </strong> {{ Data['postal'] }}
+<br>
+<strong>Timezone: </strong> {{ Data['timezone'] }}
+<br> 
+
+{% endblock %}

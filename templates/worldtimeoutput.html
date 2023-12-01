@@ -1,0 +1,17 @@
+{% extends "worldtime.html" %}
+
+
+{% block output %}
+<h3>OUTPUT</h3>
+<br>
+
+<strong><font size="4">Timezone: </font></strong><font size="3">{{ Data['timezone'] }}</font>
+<br>
+<strong><font size="4">Current Date and Time: </font></strong><font size="3">{{ Data['datetime'] }}</font>
+<br>
+<strong><font size="4">Current Day: </font></strong><font size="3">{{ Data['day_of_week'] }}</font>
+
+
+
+
+{% endblock %}

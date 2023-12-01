@@ -1,0 +1,44 @@
+{% extends "gender.html" %}
+
+{% block output %}
+
+
+<strong><h3>OUTPUT: </h3></strong>
+
+<br><br>
+<strong><font size="4">Name Given: </font></strong><br>{{ name }}
+<br><br>
+<strong><font size="4">Gender Guessed: </font></strong> {{ gender_resp['gender'] }}
+<br>
+<strong><font size="4">Gender Probability: </font></strong><br>{{ gender_resp['probability'] }}
+<br>
+<strong><font size="4">Age Guessed: </font></strong>{{ age_resp['age'] }}
+<br>
+    {% for i in nat_resp['country'] %}
+    
+    <strong><font size="4">Country Guess: </font></strong> {{ [i][0]['country_id'] }}
+    <br>
+    <strong><font size="4">Country Probability: </font></strong><br>{{ [i][0]['probability'] }}
+    <br>
+    
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

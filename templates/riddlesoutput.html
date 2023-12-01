@@ -1,0 +1,22 @@
+{% extends "riddles.html" %}
+
+
+
+
+
+{% block output %}
+
+<strong><h3>OUTPUT: </h3></strong>
+
+<strong><font size="4">Heres A Riddle: </font></strong> 
+<br><br>
+<strong><font size="4">Riddle Category: {{ Data[0]['title'] }}</font></strong>
+<br>
+<strong><font size="4">Question: </font></strong> {{ Data[0]['question'] }}
+<br>
+<strong><font size="4">Answer: </font></strong>{{ Data[0]['answer'] }}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 30px;
+            text-align: center;
+        }
+        
+        input[type=submit] {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    <DIV>
+        <STRONg><H1>Trivia</H1></STRONg>
+    </DIV>
+    <div>
+        <P><font size="5">Click a Category whose Trivia you want</font></P>
+        <form action="#" method="post" align="center">
+            <input type="submit" name="category" value="artliterature">
+            <input type="submit" name="category" value="language">
+            <input type="submit" name="category" value="sciencenature">
+            <input type="submit" name="category" value="general">
+            <input type="submit" name="category" value="fooddrink">
+            <input type="submit" name="category" value="peopleplaces">
+            <input type="submit" name="category" value="geography">
+            <br>
+            <input type="submit" name="category" value="historyholidays">
+            <input type="submit" name="category" value="entertainment">
+            <input type="submit" name="category" value="toysgames">
+            <input type="submit" name="category" value="music">
+            
+            <input type="submit" name="category" value="mathematics">
+            <input type="submit" name="category" value="religionmythology">
+            <input type="submit" name="category" value="sportsleisure">
+
+            
+        </form>
+    </div>
+
+    {% block ERR %}
+
+    {% endblock %}
+
+    {% block output %}
+
+    {% endblock %}
+
+
+
+
+    <div id="footer">
+        Made with ♥ By Kushaagra
+    </div id="footer">
+</body>
+</body>
+</html>

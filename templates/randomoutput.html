@@ -1,0 +1,78 @@
+{% extends "randomgen.html" %}
+
+
+
+{% block ERR %}
+
+<div>
+        <strong><font size="4">ERROR: </font></strong>
+</div>
+
+{% endblock %}
+
+
+
+{% block output %}
+
+<strong><h3>OUTPUT: </h3></strong>
+
+<br><br>
+
+<strong><font size="4">Gender</font></strong>: {{ info['results'][0]['gender'] }}
+<br><br>
+<strong><font size="4">Name</font></strong><br>
+    
+        Title: {{ info['results'][0]['name']['title'] }}
+        <br>
+        First: {{ info['results'][0]['name']['first'] }}
+        <br>
+        Last: {{ info['results'][0]['name']['last'] }}
+        <br><br>
+    
+<strong><font size="4">Location</font></strong><br>
+    
+        Street: {{ info['results'][0]['location']['street']['number'] }} {{ info['results'][0]['location']['street']['name'] }}
+        <br>
+        City: {{ info['results'][0]['location']['city'] }}
+        <br>
+        State: {{ info['results'][0]['location']['state'] }}
+        <br>
+        Country: {{ info['results'][0]['location']['country'] }}
+        <br>
+        Postcode: {{ info['results'][0]['location']['postcode'] }}
+        <br>
+        Coordinates: Latitude: {{ info['results'][0]['location']['coordinates']['latitude'] }} Longitude: {{ info['results'][0]['location']['coordinates']['longitude'] }} 
+        <br><br>
+    
+<strong><font size="4">Email</font></strong>: {{ info['results'][0]['email'] }} <br><br>
+<strong><font size="4">Login</font></strong><br><br>
+        uuid: {{ info['results'][0]['login']['uuid'] }}
+        <br>
+        Username: {{ info['results'][0]['login']['username'] }}
+        <br>
+        Password: {{ info['results'][0]['login']['password'] }}
+        <br>
+        Salt: {{ info['results'][0]['login']['salt'] }}
+        <br>
+        Md5: {{ info['results'][0]['login']['md5'] }}
+        <br>
+        Sha1: Latitude: {{ info['results'][0]['sha1'] }}
+        <br>
+        Sha256: Latitude: {{ info['results'][0]['sha256'] }}
+        <br><br>
+<strong><font size="4">DOB</font></strong><br>
+        date: {{ info['results'][0]['dob']['date'] }}
+        <br>
+        age: {{ info['results'][0]['dob']['age'] }}
+        <br><br>
+<strong><font size="4">ID</font></strong><br>
+        {{ info['results'][0]['id']['name'] }} : {{ info['results'][0]['id']['value'] }}
+        <br><br>
+<strong><font size="4">Numbers</font></strong><br>
+        phone: {{ info['results'][0]['phone'] }}
+        <br>
+        cell: {{ info['results'][0]['cell'] }}
+        <br><br>
+
+
+{% endblock %}

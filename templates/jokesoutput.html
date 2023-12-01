@@ -1,0 +1,20 @@
+{% extends "jokes.html" %}
+
+
+
+
+
+{% block output %}
+
+<strong><h3>OUTPUT: </h3></strong>
+
+<strong><font size="4">Joke Type: </font></strong> {{ Data['type'] }}
+<br><br>
+<strong><font size="4">Joke: </font></strong> {{ Data['setup'] }}
+<br><br>
+<strong><font size="4">Punchline: </font></strong><br> {{ Data['punchline'] }}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,10 @@
+movies:
+http://167.114.174.132:9092/movies/
+https://dl3.3rver.org/cdn2/
+
+
+
+
+series:
+https://dl3.3rver.org
+http://167.114.174.132:9092

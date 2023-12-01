@@ -1,0 +1,39 @@
+{% extends "synant.html" %}
+
+{% block output %}
+
+
+<strong><h3>OUTPUT: </h3></strong>
+
+<br><br>
+<strong><font size="4">Word: {{ Word }}</font></strong><br>
+<br>
+<strong><font size="4">Synonyms: </font></strong><br>
+    {% for i in Synonyms %}
+    <font size="3">{{i}}</font>
+    <br>  
+    {% endfor %}
+
+<strong><font size="4">Antonyms: </font></strong><br>
+    {% for j in Antonyms %}
+    <font size="3">{{j}}</font>
+    <br>  
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

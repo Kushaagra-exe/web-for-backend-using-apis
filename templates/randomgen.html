@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Info Gen</title>
+    <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <DIV>
+        <STRONg><H1>Random Info Gen</H1></STRONg>
+    </DIV>
+    <div>
+        <P><font size="5">Select the Country whose Info You Want to Generate</font></P>
+        <form action="#" method="post" align="center">
+            <input type="submit" name="country" value="US">
+            <input type="submit" name="country" value="UA">
+            <input type="submit" name="country" value="TR">
+            <input type="submit" name="country" value="RS">
+            <input type="submit" name="country" value="NZ">
+            <input type="submit" name="country" value="NO">
+            
+        </form>
+    </div>
+
+    {% block ERR %}
+
+    {% endblock %}
+
+    {% block output %}
+
+    {% endblock %}
+
+
+
+
+    <div id="footer">
+        Made with ♥ By Kushaagra
+    </div id="footer">
+</body>
+</body>
+</html>

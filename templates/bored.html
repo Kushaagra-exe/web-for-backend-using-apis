@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Suggestion</title>
+    
+</head>
+<body>
+    <DIV>
+        <STRONg><H1>Activity Suggestorx</H1></STRONg>
+    </DIV>
+
+    <div>
+        <P><font size="4">Suggest Random Activity</font></P>
+        <form action="#" method="post" align="center">
+            <input type="hidden" name="identifier" value="random">
+            <input type="submit" value="Random">
+        </form>
+    </div>
+
+    
+    <div>
+        <P><font size="4">Select the Type of activity you want to do</font></P>
+        <form action="#" method="post" align="center">
+            <input type="hidden" name="identifier" value="activity">
+
+            <input type="submit" name="type" value="education">
+            <input type="submit" name="type" value="recreational">
+            <input type="submit" name="type" value="diy">
+            <input type="submit" name="type" value="charity">
+            <input type="submit" name="type" value="cooking">
+            <input type="submit" name="type" value="relaxation">
+            <input type="submit" name="type" value="music">
+            <input type="submit" name="type" value="busywork">
+        </form>
+    </div>
+
+
+
+    <div>
+        <P><font size="4">Select the Number of Participants</font></P>
+        <form action="#" method="post" align="center">
+            <input type="hidden" name="identifier" value="participants">
+
+            <input type="submit" name="participants" value="1">
+            <input type="submit" name="participants" value="2">
+            <input type="submit" name="participants" value="3">
+            <input type="submit" name="participants" value="4">
+            <input type="submit" name="participants" value="5">
+        </form>
+    </div>
+
+
+
+    <div>
+        <P><font size="4">Select the Price of the Activity (0 - Free, 100 - Max)</font></P>
+        <form action="#" method="post" align="center">
+            <input type="hidden" name="identifier" value="price">
+
+            <input type="number" name="price">
+            <input type="submit">
+        </form>
+    </div>
+
+
+    
+    <div>
+        <P><font size="4">Select the Accessibility of the Activity (0 - Most Accessible, 100 - Least Accessible)</font></P>
+        <form action="#" method="post" align="center">
+            <input type="hidden" name="identifier" value="accessibility">
+
+            <input type="number" name="accessibility">
+            <input type="submit">
+        </form>
+    </div>
+
+    
+
+    {% block output %}
+
+    {% endblock %}
+   
+</body>
+</html>

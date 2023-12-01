@@ -1,0 +1,20 @@
+{% extends "dicthome.html" %}
+
+{% block output %}
+
+<br><br>
+<strong><font size="4">Word Entered: </font></strong><br>{{ Data[0]['word'] }}
+
+
+<br>
+<strong>Meanings: </strong>
+<br>
+
+{% for i in Data %}
+<font size="4">{{ i }}</font>
+<br><br>
+{% endfor %}
+
+
+
+{% endblock %}
